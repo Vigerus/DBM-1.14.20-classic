@@ -57,6 +57,7 @@ do
 			timerShieldCD:Start()
 		--elseif spellId == 20534 then
 		elseif spellName == Teleport then
+		    SendChatMessage("rtsc go majorsafe","WHISPER",nil,args.destName)
 			warnTeleport:Show(args.destName)
 			timerTeleportCD:Start(self:IsSeasonal() and 21 or 25)
 		end

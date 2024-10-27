@@ -54,6 +54,7 @@ do
 		--if args.spellId == 20475 then
 		if spellName == LivingBomb then
 			timerBomb:Start(args.destName)
+			SendChatMessage("rtsc go baronbomb","WHISPER",nil,args.destName)
 			if self.Options.SetIconOnBombTarget then
 				self:SetIcon(args.destName, self.vb.bombIcon)
 			end
